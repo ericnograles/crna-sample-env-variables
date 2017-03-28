@@ -7,7 +7,7 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         <Text>Open up App.js to start working on your app!</Text>
-        <Text>Current environment is {ENVIRONMENT.CURRENT}</Text>
+        <Text>Current API URL is {ENVIRONMENT.API_URL}</Text>
       </View>
     );
   }

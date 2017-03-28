@@ -1,3 +1,3 @@
 export const ENVIRONMENT = {
-    CURRENT: process.env.REACT_NATIVE_ENVIRONMENT_CURRENT || `Dangit it didn't work!`
+    API_URL: `${process.env.REACT_NATIVE_PACKAGER_HOSTNAME}:3000` || `https://sample-web-api-dev.herokuapp.com`
 };

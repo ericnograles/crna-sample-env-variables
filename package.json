@@ -10,7 +10,7 @@
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
-    "start": "REACT_NATIVE_ENVIRONMENT_CURRENT=YO react-native-scripts start",
+    "start": "REACT_NATIVE_PACKAGER_HOSTNAME=$(ifconfig en0 | grep inet | grep -v inet6 | awk '{print $2}') react-native-scripts start",
     "eject": "react-native-scripts eject",
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
